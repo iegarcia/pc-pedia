@@ -1,7 +1,7 @@
 <template>
   <q-page>
     <div class="text-center">
-      <h1>Bienvenidos!</h1>
+      <h1>Bienvenidos a PC-Pedia!</h1>
     </div>
     <div class="flex flex-center">
       <q-card dark bordered class="bg-grey-9 my-card">
@@ -17,7 +17,7 @@
     </div>
     <br />
     <div class="text-center">
-      <q-btn color="secondary" label="Comenzar" size="xl" to="categories" />
+      <q-btn color="secondary" label="Comenzar" size="xl" to="categorias" />
     </div>
   </q-page>
 </template>
@@ -28,8 +28,8 @@ export default {
   data() {
     return {
       welcome:
-        "Este espacio esta hecho exclusivamente para aquellas personas que carecen de conocimiento en lo que se refiere al manejo del artefacto introducido originalmente en 1936 que fue evolucionando desde hasta lo que usamos hoy...La Computadora"
+        "Este espacio esta hecho exclusivamente para aquellas personas que carecen de conocimiento en lo que se refiere al manejo del artefacto introducido originalmente en 1936 que fue evolucionando desde hasta lo que usamos hoy...La Computadora",
     };
-  }
+  },
 };
 </script>

@@ -10,9 +10,8 @@
           aria-label="Menu"
           @click="leftDrawerOpen = !leftDrawerOpen"
         />
-        <a href="/" style="color: White">
-          <q-toolbar-title> PC-Pedia </q-toolbar-title>
-        </a>
+
+        <q-toolbar-title> Conocimientos Basicos </q-toolbar-title>
       </q-toolbar>
     </q-header>
 
@@ -57,7 +56,7 @@ const linksData = [
 ];
 
 export default {
-  name: "MainLayout",
+  name: "BasicLayout",
   components: { EssentialLink },
   data() {
     return {

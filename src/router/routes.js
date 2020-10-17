@@ -1,20 +1,61 @@
 const routes = [
   {
     path: "/",
+    name: "raiz",
     component: () => import("layouts/MainLayout.vue"),
     children: [
       {
         path: "",
-        component: () => import("pages/Index.vue"),
+        name: "indice",
+        component: () => import("pages/Index"),
       },
       {
-          path: "/categories",
-          component: () => import("pages/Categories.vue")
-        }
+        path: "categorias",
+        name: "categorias",
+        component: () => import("pages/Categorias"),
+      },
+      {
+        path: "basicos",
+        name: "basicos",
+        component: () => import("pages/Categorias/Basicos"),
+        children: [
+          {
+            path: "info",
+            name: "info",
+            component: () => import("pages/Basico/Info"),
+          }
+        ]
+      },
+      {
+        path: "pantalla",
+        name: "pantalla",
+        component: () => import("pages/Categorias/Pantalla"),
+      },
+      {
+        path: "navegador",
+        name: "navegador",
+        component: () => import("pages/Categorias/Navegador"),
+      },
+      {
+        path: "sistema",
+        name: "sistema",
+        component: () => import("pages/Categorias/Sistema"),
+      },
+      {
+        path: "carteles",
+        name: "carteles",
+        component: () => import("pages/Categorias/Carteles"),
+      },
+      {
+        path: "extensiones",
+        name: "extensiones",
+        component: () => import("pages/Categorias/Extensiones"),
+      },
     ]
   },
 
-//   ,
+
+  //   ,
   // Always leave this as last one,
   // but you can also remove it
   {
