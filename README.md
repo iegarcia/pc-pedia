@@ -1,6 +1,6 @@
-# pregfreq (preqfreq)
+# PC-Pedia
 
-Como usar la PC
+Aplicacion guia que se orienta a ayudar a una persona a utilizar una computadora para lo que sea necesario
 
 ## Install the dependencies
 ```bash
