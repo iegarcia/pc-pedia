@@ -15,14 +15,34 @@ const routes = [
         component: () => import("pages/Categorias"),
       },
       {
-        path: "basicos",
+        path: "/basicos",
         name: "basicos",
         component: () => import("pages/Categorias/Basicos"),
         children: [
           {
-            path: "info",
+            path: "/info",
             name: "info",
             component: () => import("pages/Basico/Info"),
+          },
+          {
+            path: "/utilidad",
+            name: "utilidad",
+            component: () => import("pages/Basico/Utilidad"),
+          },
+          {
+            path: "/partes",
+            name: "partes",
+            component: () => import("pages/Basico/Partes"),
+          },
+          {
+            path: "/perif",
+            name: "perifericos",
+            component: () => import("pages/Basico/Perifericos"),
+          },
+          {
+            path: "/cantidad",
+            name: "cantidad",
+            component: () => import("pages/Basico/Cantidad"),
           }
         ]
       },
@@ -53,7 +73,6 @@ const routes = [
       },
     ]
   },
-
 
   //   ,
   // Always leave this as last one,

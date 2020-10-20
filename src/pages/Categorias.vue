@@ -13,7 +13,7 @@
     <br />
     <div class="row justify-around">
       <div v-for="(categoria, idx) in categories" :key="idx">
-        <Categories v-bind="categoria" />
+        <Categories v-bind="categoria" style="font-size: 20px" />
         <br />
       </div>
       <router-view />
@@ -46,7 +46,7 @@ export default {
         {
           title: "Navegador",
           text:
-            "Una de las herramientas que nos conecta con el mundo y una mientras sepamos como utilizarlo que hace, para que sirve, que tiene, cuantos hay, utilidades, etc",
+            "Una de las herramientas que nos conecta con el mundo y una de las formas de entrar a internet mientras sepamos como utilizarlo que hace, para que sirve, que tiene, cuantos hay, utilidades, etc",
           link: "#/navegador",
         },
         {
@@ -64,7 +64,7 @@ export default {
         {
           title: "Extensiones",
           text:
-            "Notaste que ciertos elementos de la pc tiene un distintivo, bueno aca te comento para que sirve y aclaramos: Que son y para sirven.",
+            "Notaste que ciertos elementos de la pc tiene un distintivo y hasta a veces es necesario el uso de algun programa externo? Bueno aca te comento para que sirve y aclaramos: Que son y para sirven.",
           link: "#/extensiones",
         },
       ],

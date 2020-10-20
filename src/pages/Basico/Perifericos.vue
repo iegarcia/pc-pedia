@@ -1,12 +1,12 @@
 <template>
   <q-page>
-    <h2>Que es?</h2>
+    <h2>Perifericos</h2>
   </q-page>
 </template>
 
 <script>
 export default {
-  name: "Info",
+  name: "Perifericos",
 };
 </script>
 
