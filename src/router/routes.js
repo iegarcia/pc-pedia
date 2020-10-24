@@ -74,6 +74,10 @@ const routes = [
     ]
   },
 
+  {
+    path: "/notas",
+    component: () => import("pages/Notas.vue")
+  },
   //   ,
   // Always leave this as last one,
   // but you can also remove it

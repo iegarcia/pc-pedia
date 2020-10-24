@@ -1,5 +1,5 @@
 <template>
-  <q-tab-panel :name="panel">
+  <div>
     <div class="text-h4 q-mb-md">{{ title }}</div>
     <p>
       {{ text }}
@@ -13,7 +13,7 @@
       cumque magnam odio iure quidem, quod illum numquam possimus obcaecati
       commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero. -->
     </p>
-  </q-tab-panel>
+  </div>
 </template>
 
 <script>
@@ -22,7 +22,7 @@ export default {
   props: {
     panel: String,
     title: String,
-    text: String
-  }
+    text: String,
+  },
 };
 </script>

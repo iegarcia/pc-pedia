@@ -5,7 +5,6 @@
         <div class="row">
           <div class="col-3">
             <BtnAtras />
-            <!-- <q-btn label="Atras" to="/categorias" color="primary" /> -->
           </div>
           <div class="col-6">
             <h3 class="text-center">Pantalla</h3>
@@ -31,9 +30,13 @@
                 transition-prev="jump-up"
                 transition-next="jump-up"
               >
-                <div v-for="(pnl, idx) in sPanel" :key="idx">
+                <q-tab-panel
+                  v-for="pnl in sPanel"
+                  :key="pnl.name"
+                  :name="pnl.name"
+                >
                   <ScreenPanel v-bind="pnl" />
-                </div>
+                </q-tab-panel>
               </q-tab-panels>
             </template>
           </q-splitter>
@@ -54,15 +57,15 @@ export default {
   components: {
     BtnAtras,
     ScreenTabs,
-    ScreenPanel
+    ScreenPanel,
   },
   data() {
     return {
       tab: "brillo",
       splitterModel: 20,
       sTabs,
-      sPanel
+      sPanel,
     };
-  }
+  },
 };
 </script>

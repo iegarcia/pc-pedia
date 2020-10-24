@@ -1,65 +1,67 @@
 let infoBasica = [
-    {
-      link: "info",
-      label: "Que es"
-    },
-    {
-      link: "utilidad",
-      label: "Para que sirve"
-    },
-    {
-      link: "partes",
-      label: "Componentes"
-    },
-    {
-      link: "perif",
-      label: "Perifericos"
-    },
-    {
-      link: "cantidad",
-      label: "¿Cuantas Hay?"
-    }
+  {
+    link: "info",
+    label: "Que es"
+  },
+  {
+    link: "utilidad",
+    label: "Para que sirve"
+  },
+  {
+    link: "partes",
+    label: "Componentes"
+  },
+  {
+    link: "perif",
+    label: "Perifericos"
+  },
+  {
+    link: "cantidad",
+    label: "¿Cuantas Hay?"
+  }
 ];
 
+let catNombres = ["Pantalla", "Sistema", "Navegador", "Carteles Extraños", "Extensiones"];
+
 let categories = [
-    {
-      title: "Conocimientos basicos",
-      text:
-        "Como en toda investigacion se comienza por los conocimientos basicos como: que es una computadora, para que sirve, de que se compone, cuantas hay, perifericos, utilidades, etc",
-      link: "#/basicos"
-    },
-    {
-      title: "Pantalla",
-      text:
-        "Al ser lo primero que vez es normal que surjan algunas dudas, como por ejemplo: componentes, como se configura, iconos, ventanas, personalizacion, accesos directos, etc",
-      link: "#/pantalla"
-    },
-    {
-      title: "Navegador",
-      text:
-        "Una de las herramientas que nos conecta con el mundo y una de las formas de entrar a internet mientras sepamos como utilizarlo que hace, para que sirve, que tiene, cuantos hay, utilidades, etc",
-      link: "#/navegador"
-    },
-    {
-      title: "Sistema",
-      text:
-        "Aca se encuentran las dudas generales del sistema que tengas instalado: Teclado, configuracion, que es, notificaciones, botones, cuantos hay, compatibilidad, utilidades, etc",
-      link: "#/sistema"
-    },
-    {
-      title: "Carteles Extraños",
-      text:
-        "A quien no le ha aparecido al menos una vez un cartel que le genero incomodidad. Aca te aclaramos: Que son, tipos, de que sirven, cantidad, etc",
-      link: "#/carteles"
-    },
-    {
-      title: "Extensiones",
-      text:
-        "Notaste que ciertos elementos de la pc tiene un distintivo y hasta a veces es necesario el uso de algun programa externo? Bueno aca te comento para que sirve y aclaramos: Que son y para sirven.",
-      link: "#/extensiones"
-    }
+  {
+    title: "Conocimientos basicos",
+    text:
+      "Como en toda investigacion se comienza por los conocimientos basicos como: que es una computadora, para que sirve, de que se compone, cuantas hay, perifericos, utilidades, etc",
+    link: "#/basicos"
+  },
+  {
+    title: "Pantalla",
+    text:
+      "Al ser lo primero que vez es normal que surjan algunas dudas, como por ejemplo: componentes, como se configura, iconos, ventanas, personalizacion, accesos directos, etc",
+    link: "#/pantalla"
+  },
+  {
+    title: "Navegador",
+    text:
+      "Una de las herramientas que nos conecta con el mundo y una de las formas de entrar a internet mientras sepamos como utilizarlo que hace, para que sirve, que tiene, cuantos hay, utilidades, etc",
+    link: "#/navegador"
+  },
+  {
+    title: "Sistema",
+    text:
+      "Aca se encuentran las dudas generales del sistema que tengas instalado: Teclado, configuracion, que es, notificaciones, botones, cuantos hay, compatibilidad, utilidades, etc",
+    link: "#/sistema"
+  },
+  {
+    title: "Carteles Extraños",
+    text:
+      "A quien no le ha aparecido al menos una vez un cartel que le genero incomodidad. Aca te aclaramos: Que son, tipos, de que sirven, cantidad, etc",
+    link: "#/carteles"
+  },
+  {
+    title: "Extensiones",
+    text:
+      "Notaste que ciertos elementos de la pc tiene un distintivo y hasta a veces es necesario el uso de algun programa externo? Bueno aca te comento para que sirve y aclaramos: Que son y para sirven.",
+    link: "#/extensiones"
+  }
 ];
-  
+
 let sTabs = [
   {
     name: "brillo",
@@ -92,8 +94,9 @@ let sPanel = [
 ];
 
 export {
-    infoBasica,
-    categories,
-    sTabs,
-    sPanel
+  infoBasica,
+  categories,
+  catNombres,
+  sTabs,
+  sPanel
 }    

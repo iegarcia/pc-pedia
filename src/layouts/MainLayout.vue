@@ -45,14 +45,20 @@ const linksData = [
     title: "Web Page",
     caption: "ijegdesign.com",
     icon: "public",
-    link: "https://ijedesign.com"
+    link: "https://ijedesign.com",
   },
   {
     title: "Github",
     caption: "github.com/iegarcia",
     icon: "code",
-    link: "https://github.com/iegarcia"
-  }
+    link: "https://github.com/iegarcia",
+  },
+  {
+    title: "Apuntes Personales",
+    caption: "Seccion para anotar cosas",
+    icon: "note",
+    link: "#/notas",
+  },
 ];
 
 export default {
@@ -61,8 +67,8 @@ export default {
   data() {
     return {
       leftDrawerOpen: false,
-      essentialLinks: linksData
+      essentialLinks: linksData,
     };
-  }
+  },
 };
 </script>
