@@ -15,7 +15,6 @@
         </a>
       </q-toolbar>
     </q-header>
-
     <q-drawer
       v-model="leftDrawerOpen"
       show-if-above
@@ -46,14 +45,14 @@ const linksData = [
     title: "Web Page",
     caption: "ijegdesign.com",
     icon: "public",
-    link: "https://ijedesign.com",
+    link: "https://ijedesign.com"
   },
   {
     title: "Github",
     caption: "github.com/iegarcia",
     icon: "code",
-    link: "https://github.com/iegarcia",
-  },
+    link: "https://github.com/iegarcia"
+  }
 ];
 
 export default {
@@ -62,8 +61,8 @@ export default {
   data() {
     return {
       leftDrawerOpen: false,
-      essentialLinks: linksData,
+      essentialLinks: linksData
     };
-  },
+  }
 };
 </script>

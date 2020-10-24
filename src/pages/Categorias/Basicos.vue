@@ -4,7 +4,7 @@
       <div class="q-gutter-y-md">
         <div class="row">
           <div class="col-3">
-            <q-btn flat label="Align to right" />
+            <BtnAtras />
           </div>
           <div class="col-6">
             <h3 class="text-center">Conocimientos Basicos</h3>
@@ -15,40 +15,55 @@
           v-model="tab"
           narrow-indicator
           dense
-          align="justify"
           class="text-primary"
           active-bg-color="primary"
           active-color="white"
         >
-          <q-route-tab to="info" name="info" label="Que es" />
-          <q-route-tab to="utilidad" name="sirve" label="Para que sirve" />
-          <q-route-tab to="partes" name="component" label="Componentes" />
-          <q-route-tab to="perif" name="perif" label="Perifericos" />
-          <q-route-tab to="cantidad" name="cantidad" label="¿Cuantas Hay?" />
+          <div v-for="(basics, idx) in infoBasica" :key="idx">
+            <Basics v-bind="basics" />
+          </div>
         </q-tabs>
       </div>
       <router-view />
       <div class="flex flex-center">
-        <h4>
-          En esta area vamos a abarcar las dudas mas comunes a la hora de
-          comenzar a usar una computadora
+        <h4 class="titles">
+          En esta area vamos a abarcar las dudas o lo que seria conocimiento
+          general a la hora de comenzar a usar una computadora
         </h4>
-        <br />
         <p class="text-body1">
-          Inicialmente comenzaremos indicandote la parte mas importante...
-          <strong>¿Como se prende?</strong>
+          Si haces clic con el mouse en las pestañas que figuran arriba
+          encontras informacion personalizada a estos detalles basicos. Estas
+          dudas son mas a modo informativo ya que no requieren que tu
+          computadora este encendida. <br />
+          Pero nunca esta de mas conocer la parte mas importante...
+          <br />
         </p>
+        <br />
+        <q-card dark bordered class="bg-grey-9 my-card">
+          <q-card-section>
+            <div class="text-h5">¿Como se prende?</div>
+          </q-card-section>
+        </q-card>
       </div>
     </div>
   </q-page>
 </template>
 
 <script>
+import Basics from "../../components/BasicsRouteTabs";
+import BtnAtras from "../../components/BtnAtras";
+import { infoBasica } from "../../store/data";
+
 export default {
   name: "Basicos",
+  components: {
+    Basics,
+    BtnAtras
+  },
   data() {
     return {
-      tab: "info"
+      tab: "info",
+      infoBasica
     };
   }
 };
