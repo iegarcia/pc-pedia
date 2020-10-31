@@ -1,7 +1,10 @@
 <template>
   <q-page>
     <div class="text-center">
-      <h1>Bienvenidos a PC-Pedia!</h1>
+      <h1>
+        Bienvenidos a <br />
+        PC-Pedia!
+      </h1>
     </div>
     <div class="flex flex-center">
       <q-card dark bordered class="bg-grey-9 my-card">

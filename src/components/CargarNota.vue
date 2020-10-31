@@ -11,7 +11,7 @@
         v-model="titulo"
         label="Titulo *"
         lazy-rules
-        :rules="[val => (val && val.length > 0) || 'No puede quedar vacio']"
+        :rules="[(val) => (val && val.length > 0) || 'No puede quedar vacio']"
       />
 
       <q-input
@@ -20,7 +20,7 @@
         v-model="nota"
         label="Nota"
         lazy-rules
-        :rules="[val => (val && val.length > 0) || 'No puede quedar vacio']"
+        :rules="[(val) => (val && val.length > 0) || 'No puede quedar vacio']"
       />
 
       <div>
@@ -47,27 +47,28 @@ export default {
       titulo: null,
       nota: null,
       categoria: null,
-      catNombres
+      catNombres,
     };
   },
   methods: {
-    onSubmit: function() {
+    onSubmit: function () {
       let nt = {
         titulo: this.titulo,
         texto: this.nota,
         existe: false,
-        categoria: this.categoria
+        categoria: this.categoria,
       };
       this.$store.dispatch("notas/" + AGREGAR_NOTA, nt);
+      this.onReset();
     },
-    onReset: function() {
-      this.titulo = null;
-      this.nota = null;
-      this.categoria = null;
+    onReset: function () {
+      this.titulo = "";
+      this.nota = "";
+      this.categoria = "";
     },
-    mounted: function() {
+    mounted: function () {
       this.notas = leerNotas();
-    }
-  }
+    },
+  },
 };
 </script>

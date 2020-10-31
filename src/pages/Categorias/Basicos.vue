@@ -39,11 +39,23 @@
           <br />
         </p>
         <br />
-        <q-card dark bordered class="bg-grey-9 my-card">
-          <q-card-section>
-            <div class="text-h5">¿Como se prende?</div>
-          </q-card-section>
-        </q-card>
+        <div>
+          <q-expansion-item
+            expand-separator
+            icon="perm_identity"
+            label="Account settings"
+            caption="John Doe"
+          >
+            <q-card>
+              <q-card-section>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Quidem, eius reprehenderit eos corrupti commodi magni quaerat ex
+                numquam, dolorum officiis modi facere maiores architecto
+                suscipit iste eveniet doloribus ullam aliquid.
+              </q-card-section>
+            </q-card>
+          </q-expansion-item>
+        </div>
       </div>
     </div>
   </q-page>
@@ -58,13 +70,13 @@ export default {
   name: "Basicos",
   components: {
     Basics,
-    BtnAtras
+    BtnAtras,
   },
   data() {
     return {
       tab: "info",
-      infoBasica
+      infoBasica,
     };
-  }
+  },
 };
 </script>

@@ -1,9 +1,9 @@
 <template>
-  <q-btn label="Atras" to="/categorias" color="primary" />
+  <q-btn label="Atras" icon="chevron_left" to="/categorias" color="primary" />
 </template>
 
 <script>
 export default {
-  name: "BtnAtras"
+  name: "BtnAtras",
 };
 </script>

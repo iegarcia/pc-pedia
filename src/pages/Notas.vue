@@ -1,5 +1,15 @@
 <template>
   <div>
+    <q-toolbar class="bg-primary glossy text-white">
+      <q-btn flat round dense icon="keyboard_backspace" to="/" />
+      <q-avatar>
+        <img
+          src="https://www.flaticon.com/svg/static/icons/svg/306/306350.svg"
+        />
+      </q-avatar>
+
+      <q-toolbar-title>Notas Personales</q-toolbar-title>
+    </q-toolbar>
     <q-splitter v-model="splitterModel" style="height: 450px">
       <template v-slot:before>
         <q-tabs v-model="tab" vertical class="text-teal">
@@ -35,13 +45,13 @@ import ListarNotas from "../components/ListarNotas";
 export default {
   components: {
     CargarNota,
-    ListarNotas
+    ListarNotas,
   },
   data() {
     return {
-      tab: "agregar",
-      splitterModel: 20
+      tab: "listar",
+      splitterModel: 20,
     };
-  }
+  },
 };
 </script>
