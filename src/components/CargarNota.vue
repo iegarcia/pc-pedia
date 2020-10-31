@@ -11,17 +11,16 @@
         v-model="titulo"
         label="Titulo *"
         lazy-rules
-        :rules="[(val) => (val && val.length > 0) || 'No puede quedar vacio']"
+        :rules="[val => (val && val.length > 0) || 'No puede quedar vacio']"
       />
 
       <q-input
         filled
-        autogrow
         type="textarea"
         v-model="nota"
         label="Nota"
         lazy-rules
-        :rules="[(val) => (val && val.length > 0) || 'No puede quedar vacio']"
+        :rules="[val => (val && val.length > 0) || 'No puede quedar vacio']"
       />
 
       <div>
@@ -41,30 +40,34 @@
 <script>
 import { leerNotas } from "../services";
 import { catNombres } from "../store/data";
-import { AGREGAR_NOTA } from "../store/notas/types";
+import { AGREGAR_NOTA } from "../store/notes/types";
 export default {
   data() {
     return {
       titulo: null,
       nota: null,
       categoria: null,
-      catNombres,
+      catNombres
     };
   },
   methods: {
-    onSubmit: function () {
+    onSubmit: function() {
       let nt = {
         titulo: this.titulo,
         texto: this.nota,
         existe: false,
-        categoria: this.categoria,
+        categoria: this.categoria
       };
       this.$store.dispatch("notas/" + AGREGAR_NOTA, nt);
     },
-    onReset: function () {},
-    mounted: function () {
-      this.notas = leerNotas();
+    onReset: function() {
+      this.titulo = null;
+      this.nota = null;
+      this.categoria = null;
     },
-  },
+    mounted: function() {
+      this.notas = leerNotas();
+    }
+  }
 };
 </script>

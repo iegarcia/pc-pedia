@@ -2,7 +2,7 @@ export default {
     estadoNota: (state) => {
         let existe = 0
         let falta = 0
-        state.notas.array.forEach(nota => {
+        state.notas.forEach(nota => {
             if (nota.notas) {
                 existe++
             } else {

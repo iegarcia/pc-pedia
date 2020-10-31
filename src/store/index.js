@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-import notas from './notas'
+import notas from './notes'
 
 Vue.use(Vuex)
 

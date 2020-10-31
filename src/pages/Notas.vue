@@ -4,6 +4,7 @@
       <template v-slot:before>
         <q-tabs v-model="tab" vertical class="text-teal">
           <q-tab name="agregar" label="Agregar Nota" />
+          <q-tab name="listar" label="Listar Notas" />
         </q-tabs>
       </template>
 
@@ -19,6 +20,9 @@
           <q-tab-panel name="agregar">
             <CargarNota />
           </q-tab-panel>
+          <q-tab-panel name="listar">
+            <ListarNotas />
+          </q-tab-panel>
         </q-tab-panels>
       </template>
     </q-splitter>
@@ -27,15 +31,17 @@
 
 <script>
 import CargarNota from "../components/CargarNota";
+import ListarNotas from "../components/ListarNotas";
 export default {
   components: {
     CargarNota,
+    ListarNotas
   },
   data() {
     return {
       tab: "agregar",
-      splitterModel: 20,
+      splitterModel: 20
     };
-  },
+  }
 };
 </script>
