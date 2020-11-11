@@ -40,18 +40,18 @@
 </template>
 
 <script>
-import CargarNota from "../components/CargarNota";
-import ListarNotas from "../components/ListarNotas";
+import CargarNota from "../components/gestionNotas/CargarNota";
+import ListarNotas from "../components/gestionNotas/ListarNotas";
 export default {
   components: {
     CargarNota,
-    ListarNotas,
+    ListarNotas
   },
   data() {
     return {
       tab: "listar",
-      splitterModel: 20,
+      splitterModel: 20
     };
-  },
+  }
 };
 </script>

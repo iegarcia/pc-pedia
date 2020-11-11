@@ -50,22 +50,22 @@
 import BtnAtras from "../../components/BtnAtras";
 import ScreenTabs from "../../components/ScreenTabs";
 import ScreenPanel from "../../components/ScreenPanel";
-import { sTabs, sPanel } from "../../store/data";
+import { sTabs, sPanel } from "../../assets/data";
 
 export default {
   name: "Pantalla",
   components: {
     BtnAtras,
     ScreenTabs,
-    ScreenPanel,
+    ScreenPanel
   },
   data() {
     return {
       tab: "brillo",
       splitterModel: 20,
       sTabs,
-      sPanel,
+      sPanel
     };
-  },
+  }
 };
 </script>

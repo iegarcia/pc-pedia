@@ -23,7 +23,7 @@
 
 <script>
 import Categories from "../components/Categories";
-import { categories } from "../store/data";
+import { categories } from "../assets/data";
 
 export default {
   name: "Categorias",

@@ -62,21 +62,21 @@
 </template>
 
 <script>
-import Basics from "../../components/BasicsRouteTabs";
+import Basics from "../../components/seccionBasica/BasicsRouteTabs";
 import BtnAtras from "../../components/BtnAtras";
-import { infoBasica } from "../../store/data";
+import { infoBasica } from "assets/data";
 
 export default {
   name: "Basicos",
   components: {
     Basics,
-    BtnAtras,
+    BtnAtras
   },
   data() {
     return {
       tab: "info",
-      infoBasica,
+      infoBasica
     };
-  },
+  }
 };
 </script>
