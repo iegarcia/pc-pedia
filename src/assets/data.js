@@ -1,5 +1,9 @@
 let infoBasica = [
   {
+    link: "basicos",
+    label: "Encendido"
+  },
+  {
     link: "info",
     label: "Que es"
   },
@@ -13,7 +17,7 @@ let infoBasica = [
   },
   {
     link: "perif",
-    label: "Perifericos"
+    label: "Periféricos"
   },
   {
     link: "cantidad",
@@ -21,7 +25,13 @@ let infoBasica = [
   }
 ];
 
-let catNombres = ["Pantalla", "Sistema", "Navegador", "Carteles Extraños", "Extensiones"];
+let catNombres = [
+  "Pantalla",
+  "Sistema",
+  "Navegador",
+  "Carteles Extraños",
+  "Extensiones"
+];
 
 let categories = [
   {
@@ -82,21 +92,16 @@ let sTabs = [
   {
     name: "ventana",
     label: "Las ventanas"
-  },
+  }
 ];
 
 let sPanel = [
   {
     name: "brillo",
     title: "Subir/bajar el brillo",
-    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium. Cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero."
-  },
+    text:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium. Cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero."
+  }
 ];
 
-export {
-  infoBasica,
-  categories,
-  catNombres,
-  sTabs,
-  sPanel
-}    
+export { infoBasica, categories, catNombres, sTabs, sPanel };

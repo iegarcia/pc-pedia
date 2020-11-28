@@ -48,8 +48,8 @@
 
 <script>
 import BtnAtras from "../../components/BtnAtras";
-import ScreenTabs from "../../components/ScreenTabs";
-import ScreenPanel from "../../components/ScreenPanel";
+import ScreenTabs from "../../components/seccionPantalla/ScreenTabs";
+import ScreenPanel from "../../components/seccionPantalla/ScreenPanel";
 import { sTabs, sPanel } from "../../assets/data";
 
 export default {

@@ -59,7 +59,7 @@ export default {
         categoria: this.categoria
       };
       this.$store.dispatch("notas/" + AGREGAR_NOTA, nt);
-      this.onReset();
+      //this.$router.push({ path: "notas" }); Al estar en la misma ruta no funca
     },
     onReset: function() {
       this.titulo = "";

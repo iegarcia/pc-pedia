@@ -76,6 +76,7 @@ const routes = [
 
   {
     path: "/notas",
+    name: "notes",
     component: () => import("pages/Notas.vue")
   },
   //   ,

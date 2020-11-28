@@ -22,6 +22,7 @@
     <div class="text-center">
       <q-btn color="secondary" label="Comenzar" size="xl" to="categorias" />
     </div>
+    <br />
   </q-page>
 </template>
 
@@ -31,8 +32,8 @@ export default {
   data() {
     return {
       welcome:
-        "Este espacio esta hecho exclusivamente para aquellas personas que carecen de conocimiento en lo que se refiere al manejo del artefacto introducido originalmente en 1936 que fue evolucionando desde hasta lo que usamos hoy...La Computadora",
+        "Este espacio esta hecho exclusivamente para aquellas personas que carecen de conocimiento en lo que se refiere al manejo del artefacto introducido originalmente en 1936 que fue evolucionando desde hasta lo que usamos hoy...La Computadora"
     };
-  },
+  }
 };
 </script>
