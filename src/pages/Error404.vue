@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="fullscreen bg-blue text-white text-center q-pa-md flex flex-center"
-  >
+  <div class="fullscreen bg-blue text-white titles q-pa-md flex flex-center">
     <div>
       <div style="font-size: 10vh">
         Parece que tuvimos un problema

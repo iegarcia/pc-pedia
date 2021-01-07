@@ -3,11 +3,11 @@
     <div class="q-pa-md">
       <div class="q-gutter-y-md">
         <div class="row">
-          <div class="col-3">
+          <div class="col-md-3">
             <BtnAtras />
           </div>
-          <div class="col-6">
-            <h3 class="text-center">Pantalla</h3>
+          <div class="col-md-6">
+            <h3 class="titles">Pantalla</h3>
           </div>
         </div>
         <hr />

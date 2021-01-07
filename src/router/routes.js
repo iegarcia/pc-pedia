@@ -15,7 +15,7 @@ const routes = [
         component: () => import("pages/Categorias")
       },
       {
-        path: "/basicos",
+        path: "basicos",
         name: "basicos",
         component: () => import("pages/Categorias/Basicos"),
         children: [

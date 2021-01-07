@@ -1,11 +1,11 @@
 <template>
   <q-page>
-    <div class="text-center">
-      <h3>Categorias</h3>
+    <div class="titles">
+      <h3>Categorías</h3>
       <br />
       <p class="txtBienvenida">
-        Con el fin de mejorar la organizacion se agruparon en diversas
-        categorias las consultas mas frecuentes, que en base a la experiencia
+        Con el fin de mejorar la organización se agruparon en diversas
+        categorías las consultas mas frecuentes, que en base a la experiencia
         que se tenga con la computadora van a ir variando
       </p>
     </div>

@@ -1,3 +1,15 @@
 {
-    "cSpell.language": "es,en,es-ES"
+    "cSpell.language": "es,en",
+    "files.autoSave": "onFocusChange",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "cSpell.enableFiletypes": [
+        "vue"
+    ],
+    "cSpell.words": [
+        "autoplay",
+        "basica",
+        "seccion",
+        "swipeable"
+    ]
 }

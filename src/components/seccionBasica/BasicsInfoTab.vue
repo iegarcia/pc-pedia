@@ -4,14 +4,11 @@
       expand-separator
       :icon="icon"
       :label="label"
-      style="text-align: center; font-size:20px;"
+      class="tabInfoTitle"
     >
       <q-card class="bg-grey-9">
-        <q-card-section style="font-size:18px;">
+        <q-card-section class="tabInfoBody">
           {{ text }}
-          <hr />
-          <img :src="imgLink" style="width: 100%" />
-          <hr />
         </q-card-section>
       </q-card>
     </q-expansion-item>
@@ -24,8 +21,7 @@ export default {
   props: {
     icon: String,
     label: String,
-    text: String,
-    imgLink: String
+    text: String
   }
 };
 </script>

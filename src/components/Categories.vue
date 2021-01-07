@@ -17,10 +17,9 @@ export default {
   props: {
     title: String,
     text: String,
-    link: String,
-  },
+    link: String
+  }
 };
 </script>
 
-<style>
-</style>
+<style></style>
