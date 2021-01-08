@@ -54,7 +54,7 @@
 import Basics from "../../components/seccionBasica/BasicsRouteTabs";
 import BasicsInfoTab from "src/components/seccionBasica/BasicsInfoTab.vue";
 import BtnAtras from "../../components/BtnAtras";
-import { infoBasica } from "assets/data";
+import { infoBasica } from "assets/dataArray";
 
 export default {
   name: "Basicos",
@@ -64,18 +64,10 @@ export default {
   },
   data() {
     return {
-      // tab: "info",
+      tab: "info",
       //Listado de pestañas
-      infoBasica,
+      infoBasica
       //Contenido expansion item
-      text:
-        "Dependiendo del tipo de computadora (portátil, escritorio) que tengas el botón desde donde se va a encender puede estar ubicado en distintos puntos. Si es de escritorio se encuentra ubicado en la parte superior del CPU, si es una portátil es mas común que este por la parte superior, arriba del teclado.",
-      icon: "power_settings_new",
-      label: "¿De donde se prende?",
-      text2:
-        "Hay muchas respuestas a eso dependiendo del equipo que tengas. Si es un equipo portátil lo primero que se hace cuando esto ocurre es revisar la batería. ¿Como revisar la batería? Solo conéctela a la corriente utilizando su cargador y vuelva a probar encenderla, si haciendo eso no arranco seguro se trate de una falla técnica. En el caso de ser un equipo de escritorio el problema puede residir en cualquiera de sus componentes por lo que le recomendamos que se comunique con soporte técnico o alguien que sepa",
-      icon2: "sentiment_very_dissatisfied",
-      label2: "¿Porque no enciende?"
     };
   }
 };

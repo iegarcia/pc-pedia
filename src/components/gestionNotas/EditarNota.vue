@@ -50,7 +50,7 @@
 </template>
 
 <script>
-import { catNombres } from "assets/data";
+import { catNombres } from "assets/dataArray";
 import { ELIMINAR_NOTA, MODIFICAR_NOTA } from "../../store/notes/types";
 
 export default {

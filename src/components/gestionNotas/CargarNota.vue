@@ -39,7 +39,7 @@
 
 <script>
 import { leerNotas } from "../../services";
-import { catNombres } from "assets/data";
+import { catNombres } from "assets/dataArray";
 import { AGREGAR_NOTA } from "../../store/notes/types";
 export default {
   data() {

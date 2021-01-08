@@ -100,4 +100,74 @@ let sPanel = [
   }
 ];
 
-export { infoBasica, categories, catNombres, sTabs, sPanel };
+let infoUsos = [
+  {
+    icon: "photo",
+    text: "Album de fotos"
+  },
+  {
+    icon: "calculate",
+    text: "Calculadora"
+  },
+  {
+    icon: "menu_book",
+    text: "Enciclopedia"
+  },
+  {
+    icon: "map",
+    text: "Mapa"
+  },
+  {
+    icon: "mail",
+    text: "Correo"
+  },
+  {
+    icon: "sports_esports",
+    text: "Entretenimiento"
+  },
+  {
+    icon: "show_chart",
+    text: "Finanzas"
+  },
+  {
+    icon: "wb_sunny",
+    text: "Clima"
+  },
+  {
+    icon: "chat",
+    text: "Medio de comunicación"
+  },
+  {
+    icon: "school",
+    text: "Docente"
+  },
+  {
+    icon: "local_florist",
+    text: "Baúl de recuerdos"
+  },
+  {
+    icon: "article",
+    text: "Documentación"
+  }
+];
+
+let hardware = [
+  {
+    label: "Relax Hotel",
+    children: [
+      {
+        label: "Food",
+        icon: "restaurant_menu"
+      },
+      {
+        label: "Room service",
+        icon: "room_service"
+      },
+      {
+        label: "Room view",
+        icon: "photo"
+      }
+    ]
+  }
+];
+export { infoBasica, categories, catNombres, infoUsos, hardware };

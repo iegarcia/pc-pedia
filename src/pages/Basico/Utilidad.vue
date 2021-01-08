@@ -2,7 +2,7 @@
   <q-page>
     <br />
     <h3 class="titles">¿Para que sirve?</h3>
-    <ParagraphInfo :info="info" />
+    <ParagraphInfo :info="utilidad" />
     <div class="q-pa-md">
       <div class="q-gutter-md">
         <q-carousel
@@ -13,62 +13,88 @@
           navigation
           padding
           arrows
-          height="300px"
-          class="bg-positive text-white shadow-1 rounded-borders"
+          height="250px"
+          class="bg-dark text-white shadow-1 rounded-borders"
           infinite
           :autoplay="10000"
           transition-prev="slide-right"
           transition-next="slide-left"
         >
           <q-carousel-slide name="1" class="column no-wrap flex-center">
-            <q-icon name="book" size="56px" />
-            <div class="q-mt-md text-center" style="font-size: 25px">
+            <q-icon name="book" size="45px" />
+            <div class="q-mt-md text-center txtUsos">
               {{ libro }}
             </div>
           </q-carousel-slide>
           <q-carousel-slide name="2" class="column no-wrap flex-center">
-            <q-icon name="live_tv" size="56px" />
-            <div class="q-mt-md text-center">
-              {{ lorem }}
+            <q-icon name="event_available" size="45px" />
+            <div class="q-mt-md text-center txtUsos">
+              {{ calendar }}
             </div>
           </q-carousel-slide>
           <q-carousel-slide name="3" class="column no-wrap flex-center">
-            <q-icon name="layers" size="56px" />
-            <div class="q-mt-md text-center">
-              {{ lorem }}
+            <q-icon name="play_circle_outline" size="45px" />
+            <div class="q-mt-md text-center txtUsos">
+              {{ player }}
             </div>
           </q-carousel-slide>
           <q-carousel-slide name="4" class="column no-wrap flex-center">
-            <q-icon name="terrain" size="56px" />
-            <div class="q-mt-md text-center">
-              {{ lorem }}
+            <q-icon name="brush" size="45px" />
+            <div class="q-mt-md text-center txtUsos">
+              {{ diseño }}
             </div>
           </q-carousel-slide>
         </q-carousel>
+      </div>
+    </div>
+    <p class="paragraphs">Y muchas otras cosas mas...</p>
+    <div class="row text-center">
+      <div
+        class="q-pa-md listaUsos col-md-3"
+        v-for="(usos, idx) in infoUsos"
+        :key="idx"
+      >
+        <UsosList v-bind="usos" />
       </div>
     </div>
   </q-page>
 </template>
 
 <script>
+import { infoUsos } from "../../assets/dataArray";
+import UsosList from "../../components/seccionBasica/UsosList";
 import ParagraphInfo from "../../components/seccionBasica/ParagraphInfo";
+import {
+  libro,
+  calendar,
+  player,
+  diseño,
+  utilidad
+} from "../../assets/dataInfo";
 
 export default {
   name: "Utilidad",
   components: {
-    ParagraphInfo
+    ParagraphInfo,
+    UsosList
   },
   data() {
     return {
+      //Contenido del párrafo
+      utilidad,
+
       //Manejo del carrousel
       slide: "1",
       autoplay: true,
+
       //Contenido del carrousel
-      libro:
-        "Estas pensando en escribir un libro, tomar apuntes puede ser tu borrador",
-      //Contenido del párrafo
-      info:
-        "La pregunta correcta seria realmente '¿Para que NO sirve?', ya que hoy en dia una computadora sirve para prácticamente cualquier necesidad que tengas (información, entretenimiento, tramites, comunicación, etc) y si dentro del abanico de funciones que ofrece no encontrás la que necesitas siempre esta disponible para adaptarse. Con el avance a pasos agigantados de lo que es la informática muchas de las herramientas que te ofrecen los sistemas actuales pueden ayudarte en tu dia a dia sin importar el trabajo que tengas o las tareas del hogar"
+      libro,
+      calendar,
+      player,
+      diseño,
+
+      //Elementos de la lista
+      infoUsos
     };
   }
 };

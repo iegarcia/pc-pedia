@@ -1,5 +1,5 @@
 <template>
-  <p style="font-size:25px">
+  <p class="paragraphs">
     {{ info }}
   </p>
 </template>

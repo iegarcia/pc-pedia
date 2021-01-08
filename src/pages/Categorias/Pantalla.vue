@@ -50,7 +50,7 @@
 import BtnAtras from "../../components/BtnAtras";
 import ScreenTabs from "../../components/seccionPantalla/ScreenTabs";
 import ScreenPanel from "../../components/seccionPantalla/ScreenPanel";
-import { sTabs, sPanel } from "../../assets/data";
+import { sTabs, sPanel } from "../../assets/dataArray";
 
 export default {
   name: "Pantalla",
