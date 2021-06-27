@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([[12],{6205:function(e,n,t){"use strict";t.r(n);var a=function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("q-pag",[t("h1",[e._v("Carteles")])])},l=[],r={name:"Carteles"},s=r,u=t("2877"),c=Object(u["a"])(s,a,l,!1,null,null,null);n["default"]=c.exports}}]);
