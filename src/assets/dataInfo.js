@@ -1,7 +1,7 @@
 let libro =
   "Estas pensando en escribir un libro, tomar apuntes, armar tu lista del super. Puede ser tu borrador";
 let calendar =
-  "Tenes algún casamiento, reunion, viaje o algún otro evento del cual querés acordarte. Puede ser tu calendario";
+  "Tenes algún casamiento, reunión, viaje o algún otro evento del cual querés acordarte. Puede ser tu calendario";
 let player =
   "Querés escuchar música, ver algún video o alguna película. Puede ser tu reproductor";
 let diseño =
@@ -25,6 +25,10 @@ let sadText =
 let sadIcon = "sentiment_very_dissatisfied";
 let sadlabel = "¿Porque no enciende?";
 
+let hardwareInfo = "Si pensamos en la computadora como un cuerpo humano, el hardware representa lo externo, el conjunto de componentes de su estructura física.";
+let perifericosInfo = "Periférico es el termino genérico que se le asigno a cualquier aparato que se conecte a la computadora, hay distintos tipos de periféricos:";
+
+
 export {
   libro,
   calendar,
@@ -39,5 +43,7 @@ export {
   powerlabel,
   sadIcon,
   sadText,
-  sadlabel
+  sadlabel,
+  hardwareInfo,
+  perifericosInfo
 };

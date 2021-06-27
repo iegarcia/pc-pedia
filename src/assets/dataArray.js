@@ -151,23 +151,87 @@ let infoUsos = [
   }
 ];
 
-let hardware = [
+let hardwareList = [
   {
-    label: "Relax Hotel",
+    label: "Hardware",
     children: [
       {
-        label: "Food",
-        icon: "restaurant_menu"
+        label: "Perifericos"
       },
       {
-        label: "Room service",
-        icon: "room_service"
-      },
-      {
-        label: "Room view",
-        icon: "photo"
+        label: "Componentes internos",
+        children: [
+          {
+            label: "Microprocesador"
+          },
+          {
+            label: "Placa madre"
+          },
+          {
+            label: "Placa de video"
+          },
+          {
+            label: "Disco Rígido"
+          },
+          {
+            label: "Lectora de CD/DVD"
+          }
+        ]
       }
     ]
   }
 ];
-export { infoBasica, categories, catNombres, infoUsos, hardware };
+let perifList = [
+  {
+    text: "Entrada"
+  },
+  {
+    text: "Salida"
+  },
+  {
+    text: "Entrada/salida"
+  },
+  {
+    text: "Almacenamiento"
+  },
+];
+
+let softwareList = [
+  {
+    label: "Software",
+    children: [
+      {
+        label: "Sistema Operativos"
+      },
+      {
+        label: "Programas"
+      },
+      {
+        label: "Archivos",
+        children: [
+          {
+            label: "Música"
+          },
+          {
+            label: "Videos"
+          },
+          {
+            label: "Documentos"
+          },
+          {
+            label: "Imágenes"
+          }
+        ]
+      }
+    ]
+  }
+];
+export {
+  infoBasica,
+  categories,
+  catNombres,
+  infoUsos,
+  hardwareList,
+  perifList,
+  softwareList
+};

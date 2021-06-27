@@ -63,6 +63,7 @@
 <script>
 import { infoUsos } from "../../assets/dataArray";
 import UsosList from "../../components/seccionBasica/UsosList";
+
 import ParagraphInfo from "../../components/seccionBasica/ParagraphInfo";
 import {
   libro,
