@@ -28,7 +28,7 @@
           />
         </div>
         <div class="col-md-6">
-          <BasicsInfoTab :text="sadText" :icon="sadIcon" :label="sadlabel" />
+          <BasicsInfoTab :text="sadText" :icon="sadIcon" :label="sadLabel" />
         </div>
       </div>
     </div>
@@ -47,7 +47,7 @@ import {
   powerlabel,
   sadIcon,
   sadText,
-  sadlabel
+  sadLabel
 } from "../../assets/dataInfo";
 
 export default {
@@ -66,7 +66,7 @@ export default {
       powerlabel,
       sadIcon,
       sadText,
-      sadlabel
+      sadLabel
     };
   }
 };

@@ -23,11 +23,18 @@ let powerlabel = "¿De donde se prende?";
 let sadText =
   "Hay muchas respuestas a eso dependiendo del equipo que tengas. Si es un equipo portátil lo primero que se hace cuando esto ocurre es revisar la batería. ¿Como revisar la batería? Solo conéctela a la corriente utilizando su cargador y vuelva a probar encenderla, si haciendo eso no arranco seguro se trate de una falla técnica. En el caso de ser un equipo de escritorio el problema puede residir en cualquiera de sus componentes por lo que le recomendamos que se comunique con soporte técnico o alguien que sepa";
 let sadIcon = "sentiment_very_dissatisfied";
-let sadlabel = "¿Porque no enciende?";
+let sadLabel = "¿Porque no enciende?";
 
-let hardwareInfo = "Si pensamos en la computadora como un cuerpo humano, el hardware representa lo externo, el conjunto de componentes de su estructura física.";
-let perifericosInfo = "Periférico es el termino genérico que se le asigno a cualquier aparato que se conecte a la computadora, hay distintos tipos de periféricos:";
+let hardwareInfo =
+  "Si pensamos en la computadora como un cuerpo humano, el hardware representa lo externo, el conjunto de componentes que dan forma a su estructura física conocida como CPU. Todo conectado dentro de un gabinete que en base al tipo de computadora puede variar su tamaño e incluso no tener uno";
+let perifericosInfo =
+  "Periférico es el termino genérico que se le asigno a cualquier aparato que se conecte a la computadora, hay distintos tipos de periféricos:";
 
+let internalInfo =
+  "Como su nombre lo indica son componentes que se encuentran dentro del CPU, algunos de estos son indispensables para la computadora otros no tanto. Si dividimos y etiquetamos los componentes basándonos en un cuerpo humano notamos lo siguiente.";
+
+let externalInfo =
+  "Asi como vimos internos también tenemos con componentes externos, estos a diferencia de los internos que interactúan con la pc, los externos le permiten al usuario comunicarse con ella entre estos se encuentran ciertos periféricos y son los siguientes.";
 
 export {
   libro,
@@ -43,7 +50,9 @@ export {
   powerlabel,
   sadIcon,
   sadText,
-  sadlabel,
+  sadLabel,
   hardwareInfo,
-  perifericosInfo
+  perifericosInfo,
+  internalInfo,
+  externalInfo
 };

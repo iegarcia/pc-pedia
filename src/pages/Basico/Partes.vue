@@ -50,42 +50,53 @@
               </div>
             </q-tab-panel>
 
-            <q-tab-panel name="Room service">
-              <div class="text-h4 q-mb-md">Room service</div>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-                praesentium cumque magnam odio iure quidem, quod illum numquam
-                possimus obcaecati commodi minima assumenda consectetur culpa
-                fuga nulla ullam. In, libero.
-              </p>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-                praesentium cumque magnam odio iure quidem, quod illum numquam
-                possimus obcaecati commodi minima assumenda consectetur culpa
-                fuga nulla ullam. In, libero.
-              </p>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-                praesentium cumque magnam odio iure quidem, quod illum numquam
-                possimus obcaecati commodi minima assumenda consectetur culpa
-                fuga nulla ullam. In, libero.
-              </p>
+            <q-tab-panel name="Componentes internos">
+              <div class="text-h4 q-mb-md test">Componentes internos</div>
+              <ParagraphInfo :info="internalInfo" />
+              <table>
+                <tr>
+                  <th>Componentes</th>
+                  <th>Parte del cuerpo</th>
+                </tr>
+
+                <tr>
+                  <td>Placa Madre</td>
+                  <td>Esqueleto</td>
+                </tr>
+
+                <tr>
+                  <td>Microprocesador</td>
+                  <td>Sistema Nervioso</td>
+                </tr>
+                <tr>
+                  <td>Placa de video</td>
+                  <td>Sistema visual</td>
+                </tr>
+                <tr>
+                  <td>Disco Rígido</td>
+                  <td>Conocimientos/Recuerdos</td>
+                </tr>
+                <tr>
+                  <td>Memoria RAM</td>
+                  <td>Memoria</td>
+                </tr>
+              </table>
             </q-tab-panel>
 
-            <q-tab-panel name="Room view">
-              <div class="text-h4 q-mb-md">Room view</div>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-                praesentium cumque magnam odio iure quidem, quod illum numquam
-                possimus obcaecati commodi minima assumenda consectetur culpa
-                fuga nulla ullam. In, libero.
-              </p>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-                praesentium cumque magnam odio iure quidem, quod illum numquam
-                possimus obcaecati commodi minima assumenda consectetur culpa
-                fuga nulla ullam. In, libero.
-              </p>
+            <q-tab-panel name="Componentes externos">
+              <div class="text-h4 q-mb-md">Componentes externos</div>
+              <ParagraphInfo :info="externalInfo" />
+
+              <q-list
+                bordered
+                class="rounded-borders"
+                style="max-width: 600px"
+                v-for="(ext, idx) in externalList"
+                :key="idx"
+              >
+                <ComponentsText v-bind="ext" />
+                <q-separator spaced />
+              </q-list>
             </q-tab-panel>
           </q-tab-panels>
         </template>
@@ -97,22 +108,48 @@
 <script>
 import ParagraphInfo from "src/components/seccionBasica/ParagraphInfo.vue";
 import UsosList from "../../components/seccionBasica/UsosList";
+import ComponentsText from "../../components/seccionBasica/ComponentsText.vue";
 
-import { hardwareList, softwareList, perifList } from "../../assets/dataArray";
-import { hardwareInfo, perifericosInfo } from "../../assets/dataInfo";
+import {
+  hardwareList,
+  softwareList,
+  perifList,
+  externalList
+} from "../../assets/dataArray";
+import {
+  hardwareInfo,
+  perifericosInfo,
+  internalInfo,
+  externalInfo
+} from "../../assets/dataInfo";
 export default {
   name: "Partes",
-  components: { ParagraphInfo, UsosList },
+  components: { ParagraphInfo, UsosList, ComponentsText },
   data() {
     return {
       splitterModel: 20,
-      selected: "Perifericos",
+      selected: "Componentes externos",
+      //Listas
       hardwareList,
       softwareList,
+      perifList,
+      externalList,
 
+      //Textos
       hardwareInfo,
       perifericosInfo,
-      perifList
+      internalInfo,
+      externalInfo,
+
+      //info componentes
+      icn_1: "keyboard",
+      lbl_1: "Teclado",
+      spn_1:
+        "El teclado representa la evolución de la antigua maquina de escribir, ya que la misma permite la escritura dentro de la PC",
+      icn_2: "keyboard",
+      lbl_2: "Teclado",
+      spn_2:
+        "El teclado representa la evolución de la antigua maquina de escribir, ya que la misma permite la escritura dentro de la PC"
     };
   }
 };
