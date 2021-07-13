@@ -28,13 +28,15 @@ let sadLabel = "¿Porque no enciende?";
 let hardwareInfo =
   "Si pensamos en la computadora como un cuerpo humano, el hardware representa lo externo, el conjunto de componentes que dan forma a su estructura física conocida como CPU. Todo conectado dentro de un gabinete que en base al tipo de computadora puede variar su tamaño e incluso no tener uno";
 let perifericosInfo =
-  "Periférico es el termino genérico que se le asigno a cualquier aparato que se conecte a la computadora, hay distintos tipos de periféricos:";
+  "Periférico es el termino genérico que se le asigno a cualquier aparato que se conecte a la computadora, hay distintos tipos de periféricos que veremos con mas detalle mas adelante pero los comunes son los siguientes:";
 
 let internalInfo =
   "Como su nombre lo indica son componentes que se encuentran dentro del CPU, algunos de estos son indispensables para la computadora otros no tanto. Si dividimos y etiquetamos los componentes basándonos en un cuerpo humano notamos lo siguiente.";
 
 let externalInfo =
   "Asi como vimos internos también tenemos con componentes externos, estos a diferencia de los internos que interactúan con la pc, los externos le permiten al usuario comunicarse con ella entre estos se encuentran ciertos periféricos y son los siguientes.";
+let softwareInfo =
+  "Por otro lado cuando hablamos de software hacemos referencia a lo que ocurre dentro de la PC, mas precisamente dentro del sistema instalado disco rigido. Esta representa mas bien la parte logica de la computadora y algunas cosas que ocurren aca dentro escapan de nuestro control o percepcion.";
 
 export {
   libro,
@@ -54,5 +56,6 @@ export {
   hardwareInfo,
   perifericosInfo,
   internalInfo,
-  externalInfo
+  externalInfo,
+  softwareInfo
 };

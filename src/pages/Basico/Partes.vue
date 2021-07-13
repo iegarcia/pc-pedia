@@ -17,7 +17,9 @@
             <q-tree
               :nodes="softwareList"
               node-key="label"
+              :selected.sync="selected"
               selected-color="primary"
+              default-expand-all
             />
           </div>
         </template>
@@ -99,6 +101,22 @@
               </q-list>
             </q-tab-panel>
           </q-tab-panels>
+          <q-tab-panels
+            v-model="selected"
+            animated
+            transition-prev="jump-up"
+            transition-next="jump-up"
+          >
+            <q-tab-panel name="Software">
+              <div class="text-h4 q-mb-md">Software</div>
+              <ParagraphInfo :info="softwareInfo" />
+              <img
+                src="https://www.ardilu.com/wp-content/uploads/2020/10/Windows-10-20h2.jpg"
+                alt="software"
+                width="550px"
+              />
+            </q-tab-panel>
+          </q-tab-panels>
         </template>
       </q-splitter>
     </div>
@@ -120,7 +138,8 @@ import {
   hardwareInfo,
   perifericosInfo,
   internalInfo,
-  externalInfo
+  externalInfo,
+  softwareInfo
 } from "../../assets/dataInfo";
 export default {
   name: "Partes",
@@ -128,7 +147,7 @@ export default {
   data() {
     return {
       splitterModel: 20,
-      selected: "Componentes externos",
+      selected: "Software",
       //Listas
       hardwareList,
       softwareList,
@@ -140,16 +159,7 @@ export default {
       perifericosInfo,
       internalInfo,
       externalInfo,
-
-      //info componentes
-      icn_1: "keyboard",
-      lbl_1: "Teclado",
-      spn_1:
-        "El teclado representa la evolución de la antigua maquina de escribir, ya que la misma permite la escritura dentro de la PC",
-      icn_2: "keyboard",
-      lbl_2: "Teclado",
-      spn_2:
-        "El teclado representa la evolución de la antigua maquina de escribir, ya que la misma permite la escritura dentro de la PC"
+      softwareInfo
     };
   }
 };

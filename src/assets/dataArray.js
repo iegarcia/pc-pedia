@@ -68,37 +68,37 @@ let categories = [
   // }
 ];
 
-let sTabs = [
-  {
-    name: "brillo",
-    label: "El brillo"
-  },
-  {
-    name: "fondo",
-    label: "Cambiar el fondo"
-  },
-  {
-    name: "desktop",
-    label: "El escritorio..."
-  },
-  {
-    name: "iconos",
-    label: "Iconos"
-  },
-  {
-    name: "ventana",
-    label: "Las ventanas"
-  }
-];
+// let sTabs = [
+//   {
+//     name: "brillo",
+//     label: "El brillo"
+//   },
+//   {
+//     name: "fondo",
+//     label: "Cambiar el fondo"
+//   },
+//   {
+//     name: "desktop",
+//     label: "El escritorio..."
+//   },
+//   {
+//     name: "iconos",
+//     label: "Iconos"
+//   },
+//   {
+//     name: "ventana",
+//     label: "Las ventanas"
+//   }
+// ];
 
-let sPanel = [
-  {
-    name: "brillo",
-    title: "Subir/bajar el brillo",
-    text:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium. Cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero."
-  }
-];
+// let sPanel = [
+//   {
+//     name: "brillo",
+//     title: "Subir/bajar el brillo",
+//     text:
+//       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis praesentium. Cumque magnam odio iure quidem, quod illum numquam possimus obcaecati commodi minima assumenda consectetur culpa fuga nulla ullam. In, libero."
+//   }
+// ];
 
 let infoUsos = [
   {
