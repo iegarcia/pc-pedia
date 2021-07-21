@@ -1,14 +1,4 @@
-let libro =
-  "Estas pensando en escribir un libro, tomar apuntes, armar tu lista del super. Puede ser tu borrador";
-let calendar =
-  "Tenes algún casamiento, reunión, viaje o algún otro evento del cual querés acordarte. Puede ser tu calendario";
-let player =
-  "Querés escuchar música, ver algún video o alguna película. Puede ser tu reproductor";
-let diseño =
-  "Estas pensando en hacer un plano, dibujar, hacer banners o diseñar. Puede ser tu lienzo";
-let utilidad =
-  "La pregunta correcta seria realmente '¿Para que NO sirve?', ya que hoy en dia una computadora sirve para prácticamente cualquier necesidad que tengas (información, entretenimiento, tramites, comunicación, etc) y si dentro del abanico de funciones que ofrece no encontrás la que necesitas siempre esta disponible para adaptarse. Con el avance a pasos agigantados de lo que es la informática muchas de las herramientas que te ofrecen los sistemas actuales pueden ayudarte en tu dia a dia sin importar el trabajo que tengas o las tareas del hogar.";
-
+//Que es
 let p1 =
   "La computadora u ordenador como se le conoce en España es una máquina electrónica que recibe y procesa datos para convertirlos en información conveniente y útil, que te permite realizar diversas tareas que van desde realizar operaciones lógicas o aritméticas de forma automática, notas o ayuda memoria hasta Creación de juegos. En 1833 el matemático e inventor británico Charles Babbage diseña e intenta construir la primera computadora, de funcionamiento mecánico, a la que llamó la 'máquina analítica'. sin embargo, la tecnología de su época no estaba lo suficientemente avanzada para hacer realidad su idea.";
 let p2 =
@@ -25,8 +15,23 @@ let sadText =
 let sadIcon = "sentiment_very_dissatisfied";
 let sadLabel = "¿Porque no enciende?";
 
+// Para que sirve?
+let utilidad =
+  "La pregunta correcta seria realmente '¿Para que NO sirve?', ya que hoy en dia una computadora sirve para prácticamente cualquier necesidad que tengas (información, entretenimiento, tramites, comunicación, etc) y si dentro del abanico de funciones que ofrece no encontrás la que necesitas siempre esta disponible para adaptarse. Con el avance a pasos agigantados de lo que es la informática muchas de las herramientas que te ofrecen los sistemas actuales pueden ayudarte en tu dia a dia sin importar el trabajo que tengas o las tareas del hogar.";
+
+let libro =
+  "Estas pensando en escribir un libro, tomar apuntes, armar tu lista del super. Puede ser tu borrador";
+let calendar =
+  "Tenes algún casamiento, reunión, viaje o algún otro evento del cual querés acordarte. Puede ser tu calendario";
+let player =
+  "Querés escuchar música, ver algún video o alguna película. Puede ser tu reproductor";
+let diseño =
+  "Estas pensando en hacer un plano, dibujar, hacer banners o diseñar. Puede ser tu lienzo";
+
+//Componentes
 let hardwareInfo =
   "Si pensamos en la computadora como un cuerpo humano, el hardware representa lo externo, el conjunto de componentes que dan forma a su estructura física conocida como CPU. Todo conectado dentro de un gabinete que en base al tipo de computadora puede variar su tamaño e incluso no tener uno";
+
 let perifericosInfo =
   "Periférico es el termino genérico que se le asigno a cualquier aparato que se conecte a la computadora, hay distintos tipos de periféricos que veremos con mas detalle mas adelante pero los comunes son los siguientes:";
 
@@ -35,8 +40,18 @@ let internalInfo =
 
 let externalInfo =
   "Asi como vimos internos también tenemos con componentes externos, estos a diferencia de los internos que interactúan con la pc, los externos le permiten al usuario comunicarse con ella entre estos se encuentran ciertos periféricos y son los siguientes.";
+
 let softwareInfo =
-  "Por otro lado cuando hablamos de software hacemos referencia a lo que ocurre dentro de la PC, mas precisamente dentro del sistema instalado disco rigido. Esta representa mas bien la parte logica de la computadora y algunas cosas que ocurren aca dentro escapan de nuestro control o percepcion.";
+  "Por otro lado cuando hablamos de software hacemos referencia a lo que ocurre dentro de la PC, mas precisamente dentro del sistema instalado disco rígido. Esta representa mas bien la parte lógica de la computadora y algunas cosas que ocurren aca dentro escapan de nuestro control o percepción.";
+
+let operativeInfo =
+  "En el apartado anterior hablamos de la parte lógica de una computadora, una parte muy importante dentro de esta lógica es el sistema operativo porque es donde se hace todo sin importar que es lo que hagas. Esta parte es muy importante porque administra todo y se comunica con cada parte de la PC sea externa o interna.";
+
+let programsInfo =
+  "Los programas son un conjunto de instrucciones que dependiendo de su tipo tienen diversas tareas que van desde edición de imágenes pasando por manipulación de videos hasta interpretación de texto o entretenimiento con juegos y muchas cosas mas...";
+
+let filesInfo =
+  "Archivo es todo pedazo de información que se encuentre guardado dentro de la computadora, estos pueden contener datos que utiliza el sistema operativo para su funcionamiento, de algunos programas en particular, pueden ser documentos o contenido multimedia.";
 
 export {
   libro,
@@ -57,5 +72,8 @@ export {
   perifericosInfo,
   internalInfo,
   externalInfo,
-  softwareInfo
+  softwareInfo,
+  operativeInfo,
+  programsInfo,
+  filesInfo
 };

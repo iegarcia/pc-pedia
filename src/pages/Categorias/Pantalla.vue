@@ -16,7 +16,7 @@
             <template v-slot:before>
               <q-tabs v-model="tab" vertical class="text-teal">
                 <div v-for="(stab, idx) in sTabs" :key="idx">
-                  <ScreenTabs v-bind="stab" />
+                  <!-- <ScreenTabs v-bind="stab" /> -->
                 </div>
               </q-tabs>
             </template>
@@ -35,7 +35,7 @@
                   :key="pnl.name"
                   :name="pnl.name"
                 >
-                  <ScreenPanel v-bind="pnl" />
+                  <!-- <ScreenPanel v-bind="pnl" /> -->
                 </q-tab-panel>
               </q-tab-panels>
             </template>
@@ -48,23 +48,23 @@
 
 <script>
 import BtnAtras from "../../components/BtnAtras";
-import ScreenTabs from "../../components/seccionPantalla/ScreenTabs";
-import ScreenPanel from "../../components/seccionPantalla/ScreenPanel";
+// import ScreenTabs from "../../components/seccionPantalla/ScreenTabs";
+// import ScreenPanel from "../../components/seccionPantalla/ScreenPanel";
 import { sTabs, sPanel } from "../../assets/dataArray";
 
 export default {
   name: "Pantalla",
   components: {
-    BtnAtras,
-    ScreenTabs,
-    ScreenPanel
+    BtnAtras
+    // ScreenTabs,
+    // ScreenPanel
   },
   data() {
     return {
       tab: "brillo",
-      splitterModel: 20,
-      sTabs,
-      sPanel
+      splitterModel: 20
+      // sTabs,
+      // sPanel
     };
   }
 };

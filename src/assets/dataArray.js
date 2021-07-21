@@ -187,7 +187,7 @@ let softwareList = [
     label: "Software",
     children: [
       {
-        label: "Sistema Operativos"
+        label: "Sistema Operativo"
       },
       {
         label: "Programas"

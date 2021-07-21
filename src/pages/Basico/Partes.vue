@@ -113,7 +113,34 @@
               <img
                 src="https://www.ardilu.com/wp-content/uploads/2020/10/Windows-10-20h2.jpg"
                 alt="software"
-                width="550px"
+                width="50%"
+              />
+            </q-tab-panel>
+            <q-tab-panel name="Sistema Operativo">
+              <div class="text-h4 q-mb-md">Sistema Operativo</div>
+              <ParagraphInfo :info="operativeInfo" />
+              <p>
+                Existen varios pero los mas conocidos son
+                <strong>Windows y Linux</strong> en lo que corresponde a PC y
+                con respecto a sistemas de celulares estan
+                <strong>Android o IOS</strong>
+              </p>
+              <img
+                src="https://sites.google.com/site/informatica8egb/_/rsrc/1424882222807/primer-quimestre/segundo-parcial/4-el-sistema-operativo/SO%20Icons.png"
+                alt="sistema_operativo"
+                width="50%"
+              />
+            </q-tab-panel>
+            <q-tab-panel name="Programas">
+              <div class="text-h4 q-mb-md">Programas</div>
+              <ParagraphInfo :info="programsInfo" />
+            </q-tab-panel>
+            <q-tab-panel name="Archivos">
+              <div class="text-h4 q-mb-md">Archivos</div>
+              <ParagraphInfo :info="filesInfo" />
+              <img
+                src="https://divermax-latam.zendesk.com/hc/es/article_attachments/212396607/contrnido_multimedia.PNG"
+                alt=""
               />
             </q-tab-panel>
           </q-tab-panels>
@@ -139,15 +166,20 @@ import {
   perifericosInfo,
   internalInfo,
   externalInfo,
-  softwareInfo
+  softwareInfo,
+  operativeInfo,
+  programsInfo,
+  filesInfo
 } from "../../assets/dataInfo";
+
 export default {
   name: "Partes",
   components: { ParagraphInfo, UsosList, ComponentsText },
   data() {
     return {
       splitterModel: 20,
-      selected: "Software",
+      selected: "Archivos",
+
       //Listas
       hardwareList,
       softwareList,
@@ -159,7 +191,10 @@ export default {
       perifericosInfo,
       internalInfo,
       externalInfo,
-      softwareInfo
+      softwareInfo,
+      operativeInfo,
+      programsInfo,
+      filesInfo
     };
   }
 };
