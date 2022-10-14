@@ -1,1 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([[14],{"0829":function(e,n,a){"use strict";a.r(n);var t=function(){var e=this,n=e.$createElement,a=e._self._c||n;return a("q-pag",[a("h1",[e._v("Navegador")])])},r=[],l={name:"Navegador"},o=l,u=a("2877"),c=Object(u["a"])(o,t,r,!1,null,null,null);n["default"]=c.exports}}]);
